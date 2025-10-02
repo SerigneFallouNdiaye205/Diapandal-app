@@ -1,0 +1,22 @@
+.evenements {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+.evenements div{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    align-items: center;
+}
+.heures-evenements {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(to bottom right , green ,rgb(235, 228, 228));
+}

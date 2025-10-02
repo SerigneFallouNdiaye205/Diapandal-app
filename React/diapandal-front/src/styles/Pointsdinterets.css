@@ -1,0 +1,225 @@
+.text {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.part {
+  width: 29vw;
+  min-height: 450px; /* hauteur fixe pour toutes les cartes */
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* espace régulier pour contenu */
+}
+
+.part:hover {
+  transform: scale(1.02);
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.2);
+}
+
+.mosque {
+  width: 100%;
+  height: 200px;
+ 
+}
+
+.p {
+  font-size: 0.9rem;
+  color: gray;
+  margin: 8px 12px;
+  flex-grow: 1; /* pour remplir l’espace et égaliser les cartes */
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 8px 12px;
+}
+
+.option, .autre {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 20px;
+  color: gray;
+}
+
+.option {
+  background-color: rgb(239, 239, 239);
+}
+
+.autre {
+  background-color: white;
+  text-align: center;
+}
+
+.horaire {
+  font-size: 0.85rem;
+  color: gray;
+  margin: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 12px;
+}
+
+.location {
+  width: 45%;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.location:hover {
+  background-color: rgb(172, 102, 18) !important;
+  color: white;
+}
+
+.detail {
+  width: 45%;
+  padding: 5px 10px;
+  background-color: rgb(22, 145, 22);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.detail:hover {
+  background-color: green;
+}
+
+.intro, .conclusion {
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 70%; height: 70%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  width: 60%;
+  max-width: 700px;
+  height: 70%;
+  border-radius: 12px;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .part { width: 45%; min-height: 380px; }
+  .mosque { height: 160px; }
+}
+
+@media (max-width: 768px) {
+  .text { flex-direction: column; align-items: center; }
+  .part { width: 90%; min-height: 350px; }
+  .links { flex-direction: row; gap: 10px; }
+  .detail { width: 45%; }
+  .location { width: 45%; }
+}
+
+/* Modal carte */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  width: 90%;
+  max-width: 1000px;
+  height: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 20%;
+  padding: 8px 15px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.close:hover {
+  background: darkred;
+}
+.contactUrgence {
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding:20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.19);
+}
+.icon{
+  position: relative;
+  top: 19px;
+  height: 25px;
+  width: 25px;
+}
+.contactUrgence p,p{
+ 
+  margin-left: 40px;
+}

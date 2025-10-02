@@ -1,0 +1,141 @@
+.prayer-widget {
+  background: linear-gradient(to bottom right , green ,rgb(235, 228, 228));
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+}
+
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.widget-header h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.city-select {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: white;
+  padding: 5px 10px;
+  backdrop-filter: blur(8px);
+  font-weight: bold;
+}
+
+.city-select option {
+  background: rgb(22,145,22);
+  color: white;
+}
+
+.current-info {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.current-time {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.next-prayer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 0.9em;
+}
+
+.countdown {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.prayer-times-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.prayer-item {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.prayer-item:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.prayer-name {
+  font-weight: bold;
+}
+
+.prayer-time {
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+}
+
+.hijri-date {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.9;
+  font-size: 0.9em;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 30px;
+}
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.error-message {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .prayer-times-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .widget-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .next-prayer {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

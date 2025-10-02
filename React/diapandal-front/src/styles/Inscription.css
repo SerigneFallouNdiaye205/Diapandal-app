@@ -1,0 +1,129 @@
+.formulaire {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.Messagedaccueil {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Messagedaccueil h1 {
+  color: #2c5530;
+  margin-bottom: 10px;
+}
+
+.Messagedaccueil p {
+  color: #666;
+}
+
+form {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c5530;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2c5530;
+}
+
+input.error {
+  border-color: #e74c3c;
+}
+
+input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2c5530;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #1e3a23;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button.loading {
+  background-color: #4a7052;
+}
+
+.separator {
+  text-align: center;
+  margin: 20px 0;
+  color: #666;
+  position: relative;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.separator::before {
+  left: 0;
+}
+
+.separator::after {
+  right: 0;
+}
+
+.login-link button {
+  background-color: #3498db;
+}
+
+.login-link button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.general-error {
+  margin-bottom: 5px;
+  text-align: center;
+}
