@@ -21,7 +21,7 @@ function Acceuil() {
             </div>
             <div className="article">
                     <p className="title">Netali Borom Ndame</p>
-                    <h1>Les premières heures de l’Exil du Cheikh, les prémices d’une destinée hors du commun !!</h1>    
+                    <h1>Les premières heures de l’Exil du Cheikh, les prémices d’une destinée hors du commun !!!</h1>    
                     <img src={ImCheikh} alt="" />
                     <p>
                     Ce fut le samedi 18 Safar de l’an 1313 de l’Hégire (18 Août 1895) que Cheikh Ahmadou Bamba
@@ -58,20 +58,36 @@ function Acceuil() {
 
                 <div className="article">
                     <p className="title">Netali Borom Ndame</p>
-                    <h1>NETALI : 11 novembre 1902, le retour d’exil triomphal de Cheikh Ahmadou Bamba !</h1>
+                    <h1>NETALI : 11 novembre 1902, le retour d’exil triomphal de Cheikh Ahmadou Bamba !!!</h1>
                     <img src={KR} alt="" />
-                    <p>     Comments
-« Sous un soleil brûlant, Le navire arrivait au port de Dakar, nous sommes le 11 novembre 1902. Quelques mois après le voyage de Cheikh Anta à Lamberné (Gabon) où il a rejoint Cheikh Ahmadou Bamba sur sa demande.
-Des milliers de talibés mourides s’étaient déplacés pour vivre cet instant unique et mémorable. Cheikh Ahmadou Bamba rentrait, non en tant qu’exilé, mais en tant que conquérant. Un retour triomphal qui marque l’aboutissement de sept années d’épreuves qu’il prédisait et considérait comme un pacte signé avec son Seigneur et qui serait en échange gage de l’élévation de son rang.
-Tous les exilés, même les plus célèbres, étaient oubliés par les leurs, et presque tous sont morts durant leur périple, alors que cette fois, les autorités coloniales assistaient impuissantes aux débordements de joie des mourides et se gardaient bien d’intervenir afin de ne pas violer les consignes de la métropole.
+                    <p>     Comments « Sous un soleil brûlant, Le navire arrivait au port de Dakar, nous sommes le 11 novembre 1902. 
+                    Quelques mois après le voyage de Cheikh Anta à Lamberné (Gabon) où il a rejoint Cheikh Ahmadou Bamba sur sa demande.
+                    Des milliers de talibés mourides s’étaient déplacés pour vivre cet instant unique et mémorable. Cheikh Ahmadou Bamba
+                    rentrait, non en tant qu’exilé, mais en tant que conquérant. Un retour triomphal qui marque l’aboutissement de sept 
+                    années d’épreuves qu’il prédisait et considérait comme un pacte signé avec son Seigneur et qui serait en échange gage 
+                    de l’élévation de son rang.<br /><br />
+                    Tous les exilés, même les plus célèbres, étaient oubliés par les leurs, et presque tous sont morts durant leur périple, 
+                    alors que cette fois, les autorités coloniales assistaient impuissantes aux débordements de joie des mourides et se 
+                    gardaient bien d’intervenir afin de ne pas violer les consignes de la métropole. <br /><br />
 
-Après une longue attente dans le mystère des mourides dont les visages étaient crispés, les regards profondément attristés car n’ayant aucune nouvelle de Cheikh Ahmadou Bamba, un agent du personnel du navire sortit avec ces mots : « Où est Cheikh Anta ? »
+                    Après une longue attente dans le mystère des mourides dont les visages étaient crispés, les regards profondément attristés 
+                    car n’ayant aucune nouvelle de Cheikh Ahmadou Bamba, un agent du personnel du navire sortit avec ces mots : « Où est Cheikh Anta ? »
 
-Le suspense autour de la survie de Cheikh Ahmadou Bamba était à son comble jusqu’à ce que le nom de Cheikh Anta fut prononcé à haute voix par l’un des agents du navire réclamant qu’il aille répondre au Cheikh. Tous les yeux étaient fixés vers lui, des yeux à ras bord d’envie envers Cheikh Anta. « Tout le monde souhaitait être à la place de Cheikh Anta pour se glorifier de ce moment de privilège unique que personne d’autre n’aurait vécu ».
-L’on sait que Cheikh Anta s’est acquitté de toutes les démarches administratives pour pousser les autorités coloniales à rouvrir le dossier de Cheikh Ahmadou Bamba. Une fois prouvée la légèreté des allégations, le député Carpot réussit à réhabiliter le Cheikh et à le faire revenir au Sénégal. Ces agissements font suite au voyage de Cheikh Anta au Gabon pendant lequel, il réussit à convaincre son frère à retourner au bercail et ainsi, demeurer à empêcher l’administration coloniale à asseoir sa domination culturelle.
-
-Animé par une émotion sans commune mesure, Cheikh Anta monte l’escalier en pleurs et rejoint Cheikh Ahmadou Bamba à bord du navire qui transportait Cheikh Ahmadou Bamba du Gabon au port de Dakar dans un voyage qui aura duré pas moins de deux semaines. Cette entrevue aura duré des heures, le Cheikh a attesté qu’il n’a jamais trahi le pacte qu’il a signé avec Dieu durant son séjour gabonais. Ce séjour qui, d’ores et déjà, fera de lui l’intercesseur des siens et l’éternel serviteur du prophète. »
-</p>
+                    Le suspense autour de la survie de Cheikh Ahmadou Bamba était à son comble jusqu’à ce que le nom de Cheikh Anta fut prononcé à 
+                    haute voix par l’un des agents du navire réclamant qu’il aille répondre au Cheikh. Tous les yeux étaient fixés vers lui, des yeux 
+                    à ras bord d’envie envers Cheikh Anta. « Tout le monde souhaitait être à la place de Cheikh Anta pour se glorifier de ce moment 
+                    de privilège unique que personne d’autre n’aurait vécu ». <br /><br />
+                    L’on sait que Cheikh Anta s’est acquitté de toutes les démarches administratives pour pousser les autorités coloniales à rouvrir 
+                    le dossier de Cheikh Ahmadou Bamba. Une fois prouvée la légèreté des allégations, le député Carpot réussit à réhabiliter le Cheikh 
+                    et à le faire revenir au Sénégal. <br /><br />
+                    Ces agissements font suite au voyage de Cheikh Anta au Gabon pendant lequel, il réussit à 
+                    convaincre son frère à retourner au bercail et ainsi, demeurer à empêcher l’administration coloniale à asseoir sa domination culturelle.
+                    <br /><br />
+                    Animé par une émotion sans commune mesure, Cheikh Anta monte l’escalier en pleurs et rejoint Cheikh Ahmadou Bamba à bord du navire 
+                    qui transportait Cheikh Ahmadou Bamba du Gabon au port de Dakar dans un voyage qui aura duré pas moins de deux semaines. 
+                    Cette entrevue aura duré des heures, le Cheikh a attesté qu’il n’a jamais trahi le pacte qu’il a signé avec Dieu durant son 
+                    séjour gabonais. Ce séjour qui, d’ores et déjà, fera de lui l’intercesseur des siens et l’éternel serviteur du prophète. »
+                    </p>
                 </div>
         </main>
         <Footer />

@@ -4,14 +4,22 @@
 
 Diapandal est une application web développée dans le cadre d’un projet académique.
 Elle permet de : 
+    
     🪩 gérer des informations essentielles concernant le Grand Magal de Touba, 
+    
     🪩 consulter les horaires de prière ainsi que les événements importants, 
+    
     🪩 obtenir l’emplacement exact des lieux phares de l’événement  parmi lesquels : 
+
         ◽ des sites spirituels,
+    
         ◽ des locaux de santé publique 
+    
         ◽ et des zones d’approvisionnement en alimentation de qualité.
 
 Diapandal donne également quelques renseignements sur les détails du départ du Cheikh vers le Gabon et son retour triomphal au pays, mettant le lecteur dans le parfum de l’événement. L’application offre aussi l’accès à des numéros de secours en cas d’urgence pendant le Magal.
+
+Nb : On peut s'inscrire puis s'authentifier facilement sur la plateforme !!!
 
 L’objectif est d’offrir une plateforme simple, interactive et accessible pour les pèlerins.
 
