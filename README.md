@@ -17,7 +17,7 @@ Elle permet de :
     
         ◽ et des zones d’approvisionnement en alimentation de qualité.
 
-Diapandal donne également quelques renseignements sur les détails du départ du Cheikh vers le Gabon et son retour triomphal au pays, mettant le lecteur dans le parfum de l’événement. L’application offre aussi l’accès à des numéros de secours en cas d’urgence pendant le Magal.
+Diapandal donne également quelques renseignements sur les détails du départ du Cheikh vers le Gabon et son retour triomphal au pays, mettant le lecteur au parfum de l’événement. L’application offre aussi l’accès à des numéros de secours en cas d’urgence pendant le Magal.
 
 Nb : On peut s'inscrire puis s'authentifier facilement sur la plateforme !!!
 
@@ -52,8 +52,11 @@ L’objectif est d’offrir une plateforme simple, interactive et accessible pou
     1.Cloner le dépôt
 
 git clone https://github.com/SerigneFallouNdiaye205/Diapandal-app.git
+
 cd Diapandal-app
+    
     cd React
+
         cd diapandal-front
 
 

@@ -5,20 +5,19 @@ import logo from "../images/logo.png"
 import ImCheikh from "../images/ImCheikh.jpg";
 import KR from "../images/KR.jpg";
 
-
 function Acceuil() {
  return(
     <> 
         <Header />
         <main >
-            <iframe width="100%" height="430" src="https://www.youtube.com/embed/qw0913lo5JE?list=RDqw0913lo5JE&autoplay=1" 
-            title="Khassida Safar Safar Safar Safar Kourel Toutank HTDKH GMT 2022" frameBorder="0" allow="accelerometer;
-            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/UFvP18lmrAI?si=onkiZHBUSEjxo6U8&autoplay=1" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowFullScreen></iframe>
             <div className="acceuil">
                 <h1 className="bienvenue">Bienvenue sur votre Plateforme<br />
                 <span>Diapandal<img className="logo" src={logo} alt="" /></span></h1>
-            </div>
+            </div> 
             <div className="article">
                     <p className="title">Netali Borom Ndame</p>
                     <h1>Les premières heures de l’Exil du Cheikh, les prémices d’une destinée hors du commun !!!</h1>    
