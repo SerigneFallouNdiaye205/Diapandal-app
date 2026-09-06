@@ -49,22 +49,21 @@ L’objectif est d’offrir une plateforme simple, interactive et accessible pou
 
 🚀 Installation et utilisation
 
-    1.Cloner le dépôt
+1.Cloner le dépôt
 
 git clone https://github.com/SerigneFallouNdiaye205/Diapandal-app.git
-
 cd Diapandal-app
-    
-    cd React
 
-        cd diapandal-front
-
-
-    2.Ouvrir le projet
+    1.1 pour le front
+        cd React/diapandal-front
+    1.2 pour le back
+         cd Laravel/diapandal-backend
+2.Ouvrir le projet
 Vous pouvez lancer le projet ouvert sur l’éditeur avec :
-
-npm start
-
+    2.1 pour le front
+        npm start
+    2.2 pour le back 
+        npm run dev
 
 Assurez-vous d’avoir une connexion internet pour les appels API.
 
