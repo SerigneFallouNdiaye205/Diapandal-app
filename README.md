@@ -96,4 +96,4 @@ Les contributions sont les bienvenues !
 
 📄 Licence
 
-Ce projet n’est sous aucune licence – libre d’utilisation et de modification.
+Ce projet est sous une licence MIT – libre d’utilisation et de modification.
