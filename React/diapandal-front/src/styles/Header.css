@@ -1,149 +1,490 @@
-header {
-  height: 66px;
- background: linear-gradient(to bottom right , white,green ,rgb(235, 228, 228));
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
-              0 6px 20px rgba(0, 0, 0, 0.19);
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 9999;
+
+  width: 100%;
+  height: 78px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border-bottom: 1px solid #edf3f1;
+
+  box-shadow: 0 3px 15px rgba(0, 70, 60, 0.06);
 }
 
-header nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+  width: 100%;
+  max-width: 1450px;
+
   height: 100%;
-  padding: 0 20px;
-}
 
-header nav ul {
-  width: 100vw;
+  margin: auto;
+
+  padding: 0 45px;
+
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  list-style-type: none;
 }
-.links-container{
-  width: 60%;
+
+
+/* =====================================================
+   LOGO / BRAND
+===================================================== */
+
+.brand {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-}
-header nav ul .links-container a {
+
+  gap: 10px;
+
   text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-  font-family: 'Georgia', serif;
-}
-header nav ul .links-container a{
-  position: relative;
-      text-decoration: none;
-      color: white;
-      font-size: 18px;
-      padding: 5px;
-      font-weight: 500;
-}
-header nav ul .links-container a::after{
-   content: "";
-   position: absolute;
-   left: 0;
-   bottom: -3px; /* espace sous le texte */
-   width: 100%;
-   height: 2px;
-   background: white;
-   transform: scaleX(0);
-   transform-origin: left;
-   transition: transform 0.5s ease;
-}
-header nav ul .links-container a:hover::after {
-      transform: scaleX(1);
-      transform-origin: left;
-    }
 
-.identification {
-  text-decoration: none;
-  padding: 8px 15px;
-  background-color: rgb(22, 145, 22);
-  color: white !important;
-  font-size: 0.9rem;
-  border-radius: 5px;
-}
-.identification:hover {
-  background-color: rgb(16, 110, 16);
+  flex-shrink: 0;
 }
 
-/* LOGO */
-.intro-logo {
-  list-style-type: none;
-  margin-right: 20px;
-}
-.logo {
-  width: 55px;
-  height: auto;
+
+.header-logo {
+  width: 53px;
+  height: 53px;
+
+  object-fit: contain;
 }
 
-/* BURGER MENU */
-.burger {
-  display: none;
+
+.brand-text {
+  display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 25px;
-  height: 18px;
-  cursor: pointer; 
-}
-.burger span {
-  display: block;
-  height: 3px;
-  background: black;
-  border-radius: 3px;
+
+  line-height: 1;
 }
 
-/* RESPONSIVE */
+
+.brand-text span {
+  color: #087d5b;
+
+  font-size: 25px;
+
+  font-weight: 800;
+
+  letter-spacing: -0.7px;
+}
+
+
+.brand-text small {
+  margin-top: 5px;
+
+  color: #238d70;
+
+  font-size: 12px;
+
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   MENU
+===================================================== */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+
+  gap: 34px;
+
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+
+.nav-link {
+  position: relative;
+
+  padding: 28px 0;
+
+  color: #315b56;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+
+.nav-link:hover {
+  color: #079b68;
+}
+
+
+/* Ligne sous le lien actif */
+
+.nav-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 17px;
+
+  width: 100%;
+  height: 2px;
+
+  background: #079b68;
+
+  transform: scaleX(0);
+
+  transform-origin: center;
+
+  transition: transform 0.25s ease;
+}
+
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
+}
+
+
+/* =====================================================
+   BOUTON CONNEXION
+===================================================== */
+
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  min-width: 145px;
+  height: 44px;
+
+  padding: 0 18px;
+
+  border-radius: 25px;
+
+  background: #087d5b;
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  box-shadow: 0 5px 15px rgba(8, 125, 91, 0.18);
+
+  transition: all 0.25s ease;
+}
+
+
+.login-button:hover {
+  background: #056b4e;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(8, 125, 91, 0.25);
+}
+
+
+.login-button svg {
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   MENU MOBILE
+===================================================== */
+
+.mobile-login {
+  display: none;
+}
+
+
+/* =====================================================
+   BURGER
+===================================================== */
+
+.burger-button {
+  display: none;
+
+  border: none;
+
+  background: transparent;
+
+  color: #087d5b;
+
+  font-size: 27px;
+
+  cursor: pointer;
+
+  padding: 5px;
+}
+
+
+/* =====================================================
+   TABLETTE
+===================================================== */
+
+@media (max-width: 1050px) {
+
+  .navbar {
+    padding: 0 25px;
+  }
+
+
+  .nav-menu {
+    gap: 20px;
+
+    margin-right: 20px;
+  }
+
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+
+  .login-button {
+    min-width: 125px;
+
+    font-size: 12px;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
 @media (max-width: 796px) {
-  header nav ul {
+
+  .header {
+    height: 70px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    box-shadow: 0 3px 12px rgba(0, 70, 60, 0.08);
+  }
+
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+
+  /* Logo */
+
+  .header-logo {
+    width: 45px;
+    height: 45px;
+  }
+
+
+  .brand {
+    gap: 8px;
+  }
+
+
+  .brand-text span {
+    font-size: 21px;
+  }
+
+
+  .brand-text small {
+    font-size: 10px;
+
+    margin-top: 4px;
+  }
+
+
+  /* Cacher le bouton desktop */
+
+  .login-button {
     display: none;
+  }
+
+
+  /* Burger */
+
+  .burger-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 43px;
+    height: 43px;
+
+    z-index: 10001;
+  }
+
+
+  /* Menu */
+
+  .nav-menu {
     position: absolute;
-    top: 66px;          
-    left: 0px;        
-    background: white;
-    flex-direction: column;
-    text-align: left;
-    width: 200px;       /* largeur fixe */
-    height: 300px;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  header nav ul .links-container {
-    display: block;
-    color: black;
+
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    height: auto;
+
     margin: 0;
-  }
-  header nav ul .links-container a{
-    color: black;
-    margin: 30px;
-    font-size: 0.61rem;
+
+    padding: 20px;
+
+    display: none;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 0;
+
+    background: white;
+
+    border-top: 1px solid #edf3f1;
+
+    box-shadow: 0 15px 25px rgba(0, 60, 50, 0.10);
+
+    animation: menuDown 0.25s ease;
   }
 
-  header nav ul.active {
+
+  .nav-menu.menu-open {
     display: flex;
-    animation: menuDeroulant 0.3s ease-in-out;
   }
 
-  .burger {
-    display: flex;
+
+  .nav-link {
+    width: 100%;
+
+    padding: 15px 10px;
+
+    color: #174d47;
+
+    font-size: 15px;
+
+    border-bottom: 1px solid #eef4f2;
   }
+
+
+  .nav-link::after {
+    display: none;
+  }
+
+
+  .nav-link.active {
+    color: #079b68;
+
+    font-weight: 700;
+
+    background: #f0faf6;
+
+    border-radius: 10px;
+  }
+
+
+  /* Bouton connexion mobile */
+
+  .mobile-login {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    width: 100%;
+
+    height: 48px;
+
+    margin-top: 15px;
+
+    border-radius: 12px;
+
+    background: #087d5b;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+  }
+
+
+  .mobile-login:hover {
+    background: #056b4e;
+  }
+
 }
 
-@keyframes menuDeroulant {
+
+/* =====================================================
+   PETITS TÉLÉPHONES
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .navbar {
+    padding: 0 15px;
+  }
+
+
+  .header-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+
+  .brand-text span {
+    font-size: 19px;
+  }
+
+
+  .brand-text small {
+    font-size: 9px;
+  }
+
+}
+
+
+/* =====================================================
+   ANIMATION MENU
+===================================================== */
+
+@keyframes menuDown {
+
   from {
-    transform: translateY(-10px);
     opacity: 0;
+
+    transform: translateY(-10px);
   }
+
   to {
-    transform: translateY(0);
     opacity: 1;
+
+    transform: translateY(0);
   }
+
 }
